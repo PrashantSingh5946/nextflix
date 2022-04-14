@@ -10,8 +10,10 @@ async function getUser(username, password) {
       "user",
       mongoose.Schema({
         name: String,
-        username: String,
-        password: String,
+            username: String,
+            password: String,
+            email: String,
+            dob: Date,
       })
     );
 
