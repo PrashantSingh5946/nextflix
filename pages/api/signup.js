@@ -1,13 +1,14 @@
 const jwt = require("jsonwebtoken");
-const finduser = require("./functions/finduser");
+const userexists = require("./functions/userexists");
 const adduser = require("./functions/adduser");
 
 export default async function handler(req, res) {
   if (req.method === "POST") {
     let user = req.body;
     let flag = true;
+    console.log(user);
     try {
-      flag = await finduser(user.username, user.password);
+      flag = await userexists(user.username);
       console.log("Flag is " + flag);
     } catch (ex) {
       const error = new Error("Error! Something went wrong.");
