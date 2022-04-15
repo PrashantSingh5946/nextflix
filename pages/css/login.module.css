@@ -1,11 +1,66 @@
+.background {
+  background: url("../../assets/background.jpg");
+  background-color: #333;
+  background-size: cover;
+  overflow: hidden;
+  height: 100vh;
+}
 
+.card {
+  width: 600px;
+  height: 400px;
+  margin: 100px;
+  padding: 40px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
 
-.background
-{
-    background: url("../../assets/bg3.jpg");
-    background-color: #333;
-    background-size: cover;
-    overflow: hidden;
-    height: 100vh;
-    
+.card input {
+  background: #ffffff26;
+  display: block;
+  margin: 10px;
+  border: none;
+  height: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  color: aliceblue;
+}
+
+.logo {
+  height: 50px;
+  width: 200px;
+  position: absolute;
+  left: 80px;
+  top: 20px;
+  background: url("../../assets/logo.png");
+  background-size: cover;
+}
+
+.card h1 {
+  margin: 0;
+}
+
+.card form {
+  margin-top: 30px;
+}
+
+.card input[type="submit"] {
+  background: #cb356b; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #bd3f32,
+    #cb356b
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #bd3f32,
+    #cb356b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  font-size: large;
 }

@@ -39,11 +39,16 @@ export default function login() {
 
   return (
     <div className={styles.background}>
-         <form>
-            <input type="text" ref={usernameRef} required></input>
-            <input type="password" ref={passwordRef} required></input>
-            <input type="submit" onClick={submitHandler}></input>
+      <div className={styles.logo}></div>
+      <div className={styles.card}>
+        <h1>Sign in</h1>
+        <small> Login to your account</small>
+      <form>
+            <input type="text" ref={usernameRef} placeholder="Username" required></input>
+            <input type="password" ref={passwordRef} placeholder="Password" required></input>
+            <input type="submit" className={styles.submit} value="Sign in" onClick={submitHandler}></input>
         </form>
+      </div>
     </div>
   )
 }
