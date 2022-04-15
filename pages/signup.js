@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import { useState } from "react/cjs/react.production.min";
 
 export default function signup() {
   // States for registration
