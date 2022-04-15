@@ -1,4 +1,5 @@
 import { useRef } from "react"
+import styles from "./css/login.module.css"
 
 
 export default function login() {
@@ -37,7 +38,7 @@ export default function login() {
     }
 
   return (
-    <div>
+    <div className={styles.background}>
          <form>
             <input type="text" ref={usernameRef} required></input>
             <input type="password" ref={passwordRef} required></input>
