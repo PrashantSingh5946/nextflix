@@ -1,8 +1,8 @@
-import { useRef } from "react/cjs/react.production.min";
+import { useRef } from "react";
 import styles from "./css/login.module.css"
 
 
-export default function login() {
+export default function Login() {
     let usernameRef = useRef();
     let passwordRef = useRef();
 

@@ -1,6 +1,6 @@
-import { useState } from "react/cjs/react.production.min";
+import { useState } from "react";
 
-export default function signup() {
+export default function Signup() {
   // States for registration
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
