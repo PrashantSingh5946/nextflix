@@ -1,8 +1,16 @@
 import { useRef } from "react";
+import useLogin from "../hooks/login";
 import styles from "./css/login.module.css"
+import { useRouter } from "next/dist/client/router";
 
 
 export default function Login() {
+  if (typeof window !== "undefined" && localStorage.getItem("token")) 
+  {
+    //redirect to 
+    const router = useRouter();
+    router.replace("/");
+  }
     let usernameRef = useRef();
     let passwordRef = useRef();
 
@@ -29,7 +37,8 @@ export default function Login() {
           const parsedData = JSON.parse(output)
           if(parsedData.success)
           {
-              alert("Logged in!");
+              localStorage.setItem("token",parsedData.token);
+              location.reload();
           }
           else
           {

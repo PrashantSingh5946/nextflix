@@ -7,6 +7,7 @@
 }
 
 .card {
+  color:#303f47;
   width: 600px;
   height: 400px;
   margin: 100px;
@@ -21,14 +22,19 @@
 }
 
 .card input {
-  background: #ffffff26;
+  background: #00000021;
   display: block;
   margin: 10px;
   border: none;
   height: 40px;
   padding: 10px;
   border-radius: 5px;
-  color: aliceblue;
+  color: rgb(249, 249, 249);
+}
+
+.card input::-webkit-input-placeholder {
+  color: black; /*Change the placeholder color*/
+  opacity: 0.5; /*Change the opacity between 0 and 1*/
 }
 
 .logo {
@@ -50,17 +56,8 @@
 }
 
 .card input[type="submit"] {
-  background: #cb356b; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #bd3f32,
-    #cb356b
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #bd3f32,
-    #cb356b
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  font-size: large;
+  background: #4c4c4c42; /* fallback for old browsers */
+  color:#72777d;
+  border-radius: 5px;
 }
+
