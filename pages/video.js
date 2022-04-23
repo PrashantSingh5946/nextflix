@@ -5,7 +5,7 @@ export default function video() {
     <div className={styles.background}>
       <div className={styles.logo}></div>
       <div className={styles.video_card}>
-          <video autoPlay >
+          <video autoPlay="true" controls >
               <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"></source>
           </video>
 
