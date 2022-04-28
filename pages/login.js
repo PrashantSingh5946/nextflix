@@ -8,8 +8,6 @@ export default function Login() {
   if (typeof window !== "undefined" && localStorage.getItem("token")) 
   {
     //redirect to 
-    const router = useRouter();
-    router.replace("/");
   }
     let usernameRef = useRef();
     let passwordRef = useRef();
